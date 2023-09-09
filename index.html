@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RG Fitness</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background:url(img/834279.webp);
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .left {
+            
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 50px;
+            filter: invert();
+            align-items: center;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .mid {
+            
+            margin: 20px auto;
+            display: block;
+            width: 585px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: white;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 11px 30px;
+            font-size: 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .right {
+            
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .btn {
+            margin: 17px 10px;
+            background-color:gray;
+            color: white;
+            border-radius: 20px;
+            font-size: 17px;
+            cursor: pointer;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            color: rgb(142, 234, 80);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 100px 70px;
+            padding: 13px 10px;
+            display: block;
+            width: 45%;
+            border-radius: 20px;
+        }
+        .from_type input{
+            display: block;
+            margin: 7px auto;
+            width: 70%;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 10px;
+            
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container input{
+            display: block;
+            margin: 7px auto;
+            width: 70%;
+            font-size: 20px;
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>RG Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <form action="from.php">
+            <h1>Join us my RG GYM Club in Bettiah</h1>
+            <div class="from_type">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="from_type">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            
+            <div class="from_type">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+
+            <div class="from_type">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+        </form>
+        <input type="submit" placeholder="Submit">
+    </div>
+</body>
+
+</html>
